@@ -7,17 +7,16 @@ import { ItemCount } from "../utils/ItemCount";
 import "./MonsterData.css";
 
 const MonsterDetail = () => {
-
   const { name } = useParams();
   const MonsterDetail = getMonsterById(name);
-  const {setCarrito} = useContext(ItemContext)
+  const { setCarrito } = useContext(ItemContext);
 
   const addItem = (cantidad) => {
-      const itemConCantidad = {...MonsterDetail, cantidad}
-    setCarrito(prev => {
-        return[...prev, itemConCantidad]
-    })
-  }
+    const itemConCantidad = { ...MonsterDetail, cantidad };
+    setCarrito((prev) => {
+      return [...prev, itemConCantidad];
+    });
+  };
 
   let path = "/";
   if (MonsterDetail.publisher === "Pokemons") {
@@ -35,7 +34,7 @@ const MonsterDetail = () => {
           <h5>{MonsterDetail.species}</h5>
           <p>
             {" "}
-            {"ALTURA:"} {MonsterDetail.types}{" "}
+            {"TIPOS:"} {MonsterDetail.types[0]}{" "}{MonsterDetail.types[1]}{" "}{MonsterDetail.types[2]}{" "}
           </p>{" "}
           <hr />
           <p>
@@ -45,23 +44,29 @@ const MonsterDetail = () => {
           <hr />
           <p>
             {" "}
-            {"PESO :"} {MonsterDetail.weight}{" "}
+            {"PESO:"} {MonsterDetail.weight}{" "}
           </p>{" "}
           <hr />
           <p>
             {" "}
-            {"STATS:"} {MonsterDetail.evolution}{" "}
+            {"EVOLUCIONES:"} {MonsterDetail.evolution[0]}{" "}
+            {MonsterDetail.evolution[1]} {MonsterDetail.evolution[2]}
           </p>{" "}
           <hr />
           <p>
             {" "}
-            {"ATAQUES:"} {MonsterDetail.abilities}{" "}
+            {"ATAQUES:"} {MonsterDetail.abilities[0]}{" "}
+            {MonsterDetail.abilities[1]} {MonsterDetail.abilities[2]}{" "}
           </p>{" "}
           <hr />
+          <p>
+            {" "}
+            {"PRECIO:"} $ {MonsterDetail.price}{" "}
+          </p>{" "}
         </div>
       </div>
       <div>
-        <ItemCount onAdd={addItem}/>
+        <ItemCount onAdd={addItem} />
       </div>
       <Link className="btn btn-danger mt-3" to={path}>
         {" "}

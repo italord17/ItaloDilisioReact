@@ -1,9 +1,7 @@
-import { monsterData } from "../../db/DataBase"
-
+import { monsterData } from "../../db/DataBase";
 
 const getMonsterById = (name) => {
-    return monsterData.find(monster => (monster.name === name)) 
+  return monsterData.find((monster) => monster.name === name);
+};
 
-}
-
-export default getMonsterById
+export default getMonsterById;

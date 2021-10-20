@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const CarWidget = () => {
-    return (
-        <span class="material-icons-outlined danger">
-             shopping_cart
-        </span>
-    )
-}
-
+  return (
+    <NavLink
+      className="nav-link"
+      activeClassName="active"
+      aria-current="page"
+      to="/Cart"
+    >
+      MONSTERCAR
+    </NavLink>
+  );
+};

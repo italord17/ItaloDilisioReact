@@ -29,7 +29,8 @@ export const monsterData = [
             "Grass",
             "Poison"
         ],
-        "weight": "15.2 lbs (6.9 kg)"
+        "weight": "15.2 lbs (6.9 kg)",
+        "price": "100"
     },
     {
         "publisher":"Pokemones",
@@ -59,7 +60,8 @@ export const monsterData = [
             "Grass",
             "Poison"
         ],
-        "weight": "28.7 lbs (13.0 kg)"
+        "weight": "28.7 lbs (13.0 kg)",
+        "price": "150"
     },
     {
         "publisher":"Pokemones",
@@ -89,7 +91,8 @@ export const monsterData = [
             "Grass",
             "Poison"
         ],
-        "weight": "220.5 lbs (100.0 kg)"
+        "weight": "220.5 lbs (100.0 kg)",
+        "price": "200"
     },
     {
         "publisher":"Pokemones",
@@ -118,7 +121,8 @@ export const monsterData = [
         "types": [
             "Fire"
         ],
-        "weight": "18.7 lbs (8.5 kg)"
+        "weight": "18.7 lbs (8.5 kg)",
+        "price": "100"
     },
     {
         "publisher":"Pokemones",
@@ -147,7 +151,8 @@ export const monsterData = [
         "types": [
             "Fire"
         ],
-        "weight": "41.9 lbs (19.0 kg)"
+        "weight": "41.9 lbs (19.0 kg)",
+        "price": "150"
     },
     {
         "publisher":"Pokemones",
@@ -177,7 +182,8 @@ export const monsterData = [
             "Fire",
             "Flying"
         ],
-        "weight": "199.5 lbs (90.5 kg)"
+        "weight": "199.5 lbs (90.5 kg)",
+        "price": "200"
     },
     {
         "publisher":"Digimones",
@@ -206,7 +212,8 @@ export const monsterData = [
         "types": [
             "Water"
         ],
-        "weight": "19.8 lbs (9.0 kg)"
+        "weight": "19.8 lbs (9.0 kg)",
+        "price": "100"
     },
     {
         "publisher":"Digimones",
@@ -235,7 +242,8 @@ export const monsterData = [
         "types": [
             "Water"
         ],
-        "weight": "49.6 lbs (22.5 kg)"
+        "weight": "49.6 lbs (22.5 kg)",
+        "price": "150"
     },
     {
         "publisher":"Digimones",
@@ -264,7 +272,8 @@ export const monsterData = [
         "types": [
             "Water"
         ],
-        "weight": "188.5 lbs (85.5 kg)"
+        "weight": "188.5 lbs (85.5 kg)",
+        "price": "200"
     },
     {
         "publisher":"Digimones",
@@ -293,7 +302,8 @@ export const monsterData = [
         "types": [
             "Bug"
         ],
-        "weight": "6.4 lbs (2.9 kg)"
+        "weight": "6.4 lbs (2.9 kg)",
+        "price": "100"
     },
     {
         "publisher":"Digimones",
@@ -321,7 +331,8 @@ export const monsterData = [
         "types": [
             "Bug"
         ],
-        "weight": "21.8 lbs (9.9 kg)"
+        "weight": "21.8 lbs (9.9 kg)",
+        "price": "150"
     },
     {
         "publisher":"Digimones",
@@ -351,7 +362,8 @@ export const monsterData = [
             "Bug",
             "Flying"
         ],
-        "weight": "70.5 lbs (32.0 kg)"
+        "weight": "70.5 lbs (32.0 kg)",
+        "price": "200"
     }
  
 ]
